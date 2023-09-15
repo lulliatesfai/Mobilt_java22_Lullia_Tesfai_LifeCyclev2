@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="391dp"
+        android:layout_height="63dp"
+        android:layout_above="@+id/genderRadioGroup"
+        android:layout_marginBottom="234dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="391dp"
+        android:layout_height="63dp"
+        android:layout_alignTop="@+id/genderRadioGroup"
+        android:layout_marginTop="-233dp"
+        android:hint="Age" />
+
+    <CheckBox
+        android:id="@+id/hasDriverLicenseCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="317dp"
+        android:text="Has Driver's License" />
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="331dp"
+        android:layout_height="165dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="142dp">
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/otherRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="80dp"
+        android:text="Save" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="377dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/ageEditText"
+        android:layout_marginTop="9dp"
+        android:hint="Phone Number" />
+
+
+</RelativeLayout>
